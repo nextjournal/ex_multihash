@@ -3,7 +3,7 @@ defmodule Multihash.Mixfile do
 
   def project do
     [app: :ex_multihash,
-     version: "1.0.0",
+     version: "1.1.0",
      elixir: "~> 1.0",
      description: description,
      build_embedded: Mix.env == :prod,
@@ -31,7 +31,7 @@ defmodule Multihash.Mixfile do
   #
   # Type `mix help compile.app` for more information
   def application do
-    [applications: [:logger]]
+    [extra_applications: [:logger]]
   end
 
   # Dependencies can be Hex packages:
